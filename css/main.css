@@ -1,38 +1,105 @@
 body {
     margin: 60px auto;
-    width: 70%;
+    width: 80%;
 }
+
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Roboto', sans-serif;
     padding: 0px;
     list-style: none;
     font-weight: bold;
 }
+
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
+
 a {
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
-    color: #999;
+    color: #555;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
 h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 40px; 
+} 
+h2 {
+    font-family: 'Roboto Slab', serif; 
+    font-size: 26px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 30px; 
+} 
+h3 { 
+    font-family: 'Roboto Slab', serif; 
+    font-size: 20px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 500; 
+    line-height: 22px; 
 }
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
+h4 { 
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 325; 
+    line-height: 16.8px; 
 }
+p { 
+    font-family: 'Roboto', sans-serif; 
+    font-size: 14px; 
+    font-style: normal;
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 20px; 
+} 
+
+p.end {
+   line-height: 30px;  
+}
+
+blockquote { 
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; 
+    font-size: 21px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 30px; 
+} 
+pre { 
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; 
+    font-size: 13px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 18.5714px; 
+}
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
 
+ul li {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 13px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 18.5714px;    
+}
 ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
@@ -40,4 +107,152 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+
+hr { 
+    display: block;
+    margin-before: 0.5em;
+    margin-after: 0.5em;
+    margin-start: auto;
+    margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+
+hr2 { 
+    display: block;
+    margin-before: 0.5em;
+    margin-after: 0.5em;
+    margin-start: auto;
+    width = 80%; 
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+
+div.absolute {
+  position: absolute;
+  top: 5px;
+  right: 120px;
+  width: 500px;
+  height: 300px;
+}
+
+div.imCol {
+float: right;
+padding: 10px;
+width: 310px;
+}
+
+div.imRow::after {
+content: "";
+clear: both;
+display
+}
+
+.grey {
+    color: #515151; 
+}
+
+.underl {
+    text-decoration: underline;        
+}
+
+.column {
+  float: left;
+}
+
+.left {
+  width: 60%;
+}
+
+.right {
+  width: 35%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #001000;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.7s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-family: 'Roboto Slab', serif;
+  font-size: 25px;
+  color: #FFF;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  text-decoration: underline;
+  transition: 0.7s;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 7px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-10px, 7px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-10px, -7px) ;
 }
